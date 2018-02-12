@@ -22,6 +22,7 @@ function appendKitten(name) {
 }
 
 function prependKitten(name) {
+<<<<<<< HEAD
   return [name, ...kittens]
 }
 
@@ -37,4 +38,15 @@ function removeFirstKitten() {
   array.shift()
   
   return array
+=======
+  return [...kittens, name]
+}
+
+function removeLastKitten() {
+  return [...kittens]
+}
+
+function removeFirstKitten() {
+  return [...kittens]
+>>>>>>> 639cd104b10dd7d4f0d20df637c10fb82f879dec
 }
